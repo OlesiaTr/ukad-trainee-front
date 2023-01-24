@@ -1,30 +1,19 @@
 // Utils
 import PropTypes from 'prop-types';
 
+// Components
+import { Card } from 'components/Card/Card';
+
 // Styles
-import {
-  Container,
-  CardWrapper,
-  DogName,
-  DogDesc,
-  ImgWrapper,
-  DescWrapper,
-} from './CardsList.styled';
+import { Container } from './CardsList.styled';
 
 export const CardsList = ({ data }) => {
   return (
     <Container>
-      {data.map(({ id, name, temperament, image }) => (
-        <CardWrapper key={id}>
-          <ImgWrapper>
-            <img src={image.url} alt={name} />
-          </ImgWrapper>
-
-          <DescWrapper>
-            <DogName>{name}</DogName>
-            <DogDesc>{temperament}</DogDesc>
-          </DescWrapper>
-        </CardWrapper>
+      {data.map(({ id, ...otherProps }) => (
+        <li key={id}>
+          <Card data={otherProps} />
+        </li>
       ))}
     </Container>
   );
@@ -33,5 +22,3 @@ export const CardsList = ({ data }) => {
 CardsList.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
 };
-
-// id, name, temperament

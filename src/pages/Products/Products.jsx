@@ -12,31 +12,31 @@ import { CardsList } from 'components/CardsList';
 import { Main, PageTitle } from './Products.styled';
 
 const Products = () => {
-  const [cats, setCats] = useState([]);
+  const [dogs, setDogs] = useState([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const getCats = async () => {
+    const getDogs = async () => {
       try {
         setLoading(true);
         const data = await fetchBreeds();
-        setCats(data);
+        setDogs(data);
         setLoading(false);
       } catch (error) {
         throw new Error('Something went wrong, oops', error.message);
       }
     };
 
-    getCats();
+    getDogs();
   }, []);
 
   return (
     <Main>
       {loading && <Loader />}
 
-      <PageTitle>Product Page</PageTitle>
+      {!loading && <PageTitle>Dogs Showroom (aka Product Page)</PageTitle>}
 
-      {cats && <CardsList data={cats} />}
+      {dogs && <CardsList data={dogs} />}
     </Main>
   );
 };

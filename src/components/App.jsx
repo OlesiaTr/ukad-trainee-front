@@ -8,7 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 import { SharedLayout } from './SharedLayout';
 
 // Pages
-const Home = lazy(() => import('../pages/Home'));
+const Home = lazy(() => import('../pages/Home/Home'));
 const Products = lazy(() => import('../pages/Products/Products'));
 
 export const App = () => {

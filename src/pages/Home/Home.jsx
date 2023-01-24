@@ -2,37 +2,42 @@
 import { useState, useEffect } from 'react';
 
 // API
-import { fetchBreeds } from '../services/theDogApi';
+import { fetchBreeds } from '../../services/theDogApi';
 
 // Components
 import { Loader } from 'components/Loader';
-import { CardsList } from 'components/CardsList';
+import { Slider } from 'components/Slider/Slider';
+
+// Styles
+import { Main, PageTitle } from './Home.styled';
 
 const Home = () => {
-  const [cats, setCats] = useState([]);
+  const [dogs, setDogs] = useState([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const getCats = async () => {
+    const getDogs = async () => {
       try {
         setLoading(true);
         const data = await fetchBreeds();
-        setCats(data);
+        setDogs(data);
         setLoading(false);
       } catch (error) {
         throw new Error('Something went wrong, oops', error.message);
       }
     };
 
-    getCats();
+    getDogs();
   }, []);
 
   return (
-    <main style={{ flex: '1 1 auto' }}>
+    <Main>
       {loading && <Loader />}
 
-      {cats && <CardsList data={cats} />}
-    </main>
+      {!loading && <PageTitle>Home Page</PageTitle>}
+
+      {dogs && !loading && <Slider data={dogs} />}
+    </Main>
   );
 };
 
