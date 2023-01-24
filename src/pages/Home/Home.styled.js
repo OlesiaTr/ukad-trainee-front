@@ -14,4 +14,8 @@ export const PageTitle = styled.h1`
   font-size: 36px;
 
   margin: 0 0 16px 114px;
+
+  @media (max-width: 480px) {
+    margin: 0 auto;
+  }
 `;

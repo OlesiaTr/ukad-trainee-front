@@ -11,14 +11,18 @@ export const Header = styled.header`
 
   background: #022b32;
 
-  > nav {
-    display: flex;
+  @media (max-width: 480px) {
+    gap: 15px;
   }
 `;
 
 export const Logo = styled.img`
   width: 110px;
   margin-left: 20px;
+
+  @media (max-width: 480px) {
+    margin-left: 10px;
+  }
 `;
 
 export const StyledLink = styled(NavLink)`
@@ -28,6 +32,10 @@ export const StyledLink = styled(NavLink)`
 
   & + & {
     margin-left: 55px;
+
+    @media (max-width: 480px) {
+      margin-left: 10px;
+    }
   }
 
   &.active {

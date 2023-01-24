@@ -12,6 +12,11 @@ export const Ellipse = styled.div`
   border: 1.7px solid #f8f8f8;
   box-shadow: 0px 3.4px 17px rgba(0, 0, 0, 0.1);
 
+  @media (max-width: 480px) {
+    width: 50px;
+    height: 50px;
+  }
+
   > img {
     transform: rotate(180deg);
   }
@@ -23,6 +28,10 @@ export const Btn = styled.div`
   left: 6%;
   z-index: 2;
   cursor: pointer;
+
+  @media (max-width: 480px) {
+    left: 0%;
+  }
 
   &.swiper-button-disabled {
     opacity: 0;

@@ -1,6 +1,5 @@
 // Utils
 import { Navigation, A11y } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Components
 import { Card } from 'components/Card';
@@ -9,26 +8,44 @@ import { NextBtn, PrevBtn } from 'components/Btns';
 // Styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { SwiperWrapper, SliderWrapper } from './Slider.styled';
 
 export const Slider = ({ data }) => {
   return (
     <>
-      <Swiper
+      <SwiperWrapper
         modules={[Navigation, A11y]}
-        spaceBetween={34}
-        slidesPerView={3}
         navigation={{
           prevEl: '.prev',
           nextEl: '.next',
         }}
-        style={{ maxWidth: '1330px' }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+
+          1340: {
+            slidesPerView: 3,
+            spaceBetween: 34,
+          },
+        }}
       >
         {data.map(({ id, ...otherProps }) => (
-          <SwiperSlide key={id} style={{ width: '420px' }}>
+          <SliderWrapper key={id}>
             <Card data={otherProps} />
-          </SwiperSlide>
+          </SliderWrapper>
         ))}
-      </Swiper>
+      </SwiperWrapper>
       <PrevBtn />
       <NextBtn />
     </>
