@@ -12,7 +12,7 @@ export const Ellipse = styled.div`
   border: 1.7px solid #f8f8f8;
   box-shadow: 0px 3.4px 17px rgba(0, 0, 0, 0.1);
 
-  @media (max-width: 480px) {
+  @media (min-width: 480px) {
     width: 68px;
     height: 68px;
   }

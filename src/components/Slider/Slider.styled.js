@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 export const SwiperWrapper = styled(Swiper)`
-  @media (min-width: 1340px) {
+  @media (min-width: 1360px) {
     width: 1360px;
   }
 
