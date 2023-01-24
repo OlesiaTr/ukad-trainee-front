@@ -5,23 +5,23 @@ import styled from 'styled-components';
 export const Header = styled.header`
   display: flex;
   align-items: center;
-  gap: 55px;
+  gap: 15px;
 
   padding: 25px 0 25.5px;
 
   background: #022b32;
 
-  @media (max-width: 480px) {
-    gap: 15px;
+  @media (min-width: 480px) {
+    gap: 55px;
   }
 `;
 
 export const Logo = styled.img`
   width: 110px;
-  margin-left: 20px;
+  margin-left: 10px;
 
-  @media (max-width: 480px) {
-    margin-left: 10px;
+  @media (min-width: 480px) {
+    margin-left: 20px;
   }
 `;
 
@@ -31,10 +31,10 @@ export const StyledLink = styled(NavLink)`
   color: #ffffff;
 
   & + & {
-    margin-left: 55px;
+    margin-left: 10px;
 
-    @media (max-width: 480px) {
-      margin-left: 10px;
+    @media (min-width: 480px) {
+      margin-left: 55px;
     }
   }
 

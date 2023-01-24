@@ -6,6 +6,8 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  padding: 40px 0 80px;
 `;
 
 export const PageTitle = styled.h1`

@@ -1,5 +1,6 @@
 // Utils
 import { Navigation, A11y } from 'swiper';
+import PropTypes from 'prop-types';
 
 // Components
 import { Card } from 'components/Card';
@@ -50,4 +51,8 @@ export const Slider = ({ data }) => {
       <NextBtn />
     </>
   );
+};
+
+Slider.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
 };

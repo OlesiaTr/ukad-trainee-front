@@ -5,28 +5,28 @@ export const Ellipse = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 68px;
-  height: 68px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: #ffffff;
   border: 1.7px solid #f8f8f8;
   box-shadow: 0px 3.4px 17px rgba(0, 0, 0, 0.1);
 
-  @media (max-width: 480px) {
-    width: 50px;
-    height: 50px;
+  @media (min-width: 480px) {
+    width: 68px;
+    height: 68px;
   }
 `;
 
 export const Btn = styled.div`
   position: absolute;
   top: 48%;
-  right: 6%;
+  right: 0%;
   z-index: 2;
   cursor: pointer;
 
-  @media (max-width: 480px) {
-    right: 0%;
+  @media (min-width: 480px) {
+    right: 6%;
   }
 
   &.swiper-button-disabled {
