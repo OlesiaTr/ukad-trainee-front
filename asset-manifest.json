@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/ukad-trainee-front/static/css/main.03b06134.css",
-    "main.js": "/ukad-trainee-front/static/js/main.03c0722f.js",
+    "main.js": "/ukad-trainee-front/static/js/main.d3011822.js",
     "static/css/571.83aa38fb.chunk.css": "/ukad-trainee-front/static/css/571.83aa38fb.chunk.css",
-    "static/js/571.471d2a95.chunk.js": "/ukad-trainee-front/static/js/571.471d2a95.chunk.js",
+    "static/js/571.f044f75e.chunk.js": "/ukad-trainee-front/static/js/571.f044f75e.chunk.js",
     "static/js/350.b059c5c3.chunk.js": "/ukad-trainee-front/static/js/350.b059c5c3.chunk.js",
     "static/js/952.d03c6c46.chunk.js": "/ukad-trainee-front/static/js/952.d03c6c46.chunk.js",
     "static/js/6.b965fdbb.chunk.js": "/ukad-trainee-front/static/js/6.b965fdbb.chunk.js",
@@ -12,15 +12,15 @@
     "static/media/Poppins-Bold.ttf": "/ukad-trainee-front/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "index.html": "/ukad-trainee-front/index.html",
     "main.03b06134.css.map": "/ukad-trainee-front/static/css/main.03b06134.css.map",
-    "main.03c0722f.js.map": "/ukad-trainee-front/static/js/main.03c0722f.js.map",
+    "main.d3011822.js.map": "/ukad-trainee-front/static/js/main.d3011822.js.map",
     "571.83aa38fb.chunk.css.map": "/ukad-trainee-front/static/css/571.83aa38fb.chunk.css.map",
-    "571.471d2a95.chunk.js.map": "/ukad-trainee-front/static/js/571.471d2a95.chunk.js.map",
+    "571.f044f75e.chunk.js.map": "/ukad-trainee-front/static/js/571.f044f75e.chunk.js.map",
     "350.b059c5c3.chunk.js.map": "/ukad-trainee-front/static/js/350.b059c5c3.chunk.js.map",
     "952.d03c6c46.chunk.js.map": "/ukad-trainee-front/static/js/952.d03c6c46.chunk.js.map",
     "6.b965fdbb.chunk.js.map": "/ukad-trainee-front/static/js/6.b965fdbb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03b06134.css",
-    "static/js/main.03c0722f.js"
+    "static/js/main.d3011822.js"
   ]
 }
