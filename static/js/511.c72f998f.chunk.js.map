@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/511.c72f998f.chunk.js","mappings":"0JAIA,UAJiB,WACf,OAAO,uBACR,C","sources":["pages/Products.jsx"],"sourcesContent":["const Products = () => {\n  return <></>;\n};\n\nexport default Products;\n"],"names":[],"sourceRoot":""}
