@@ -7,7 +7,7 @@ export const Header = styled.header`
   align-items: center;
   gap: 55px;
 
-  padding: 25px 0;
+  padding: 25px 0 25.5px;
 
   background: #022b32;
 
@@ -32,5 +32,17 @@ export const StyledLink = styled(NavLink)`
 
   &.active {
     text-decoration: underline;
+  }
+`;
+
+export const Footer = styled.footer`
+  background: #022b32;
+
+  > p {
+    text-transform: uppercase;
+    color: #ffffff;
+
+    margin-left: 29px;
+    padding: 27px 0;
   }
 `;

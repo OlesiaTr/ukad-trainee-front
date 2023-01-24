@@ -5,7 +5,7 @@ import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 
 // Styles
-import { Header, Logo, StyledLink } from './SharedLayout.styled';
+import { Header, Logo, StyledLink, Footer } from './SharedLayout.styled';
 import { Layout } from 'components/Layout';
 import { GlobalStyle } from 'components/GlobalStyle';
 
@@ -21,13 +21,17 @@ export const SharedLayout = () => {
           <StyledLink to="/" end>
             Home
           </StyledLink>
-          <StyledLink to="/movies">Movies</StyledLink>
+          <StyledLink to="/products">Products</StyledLink>
         </nav>
       </Header>
 
       <Suspense fallback={<div>Loading page...</div>}>
         <Outlet />
       </Suspense>
+
+      <Footer>
+        <p>2021 © copyright</p>
+      </Footer>
 
       <GlobalStyle />
     </Layout>
