@@ -2,13 +2,16 @@
 import { useState, useEffect } from 'react';
 
 // API
-import { fetchBreeds } from '../services/theDogApi';
+import { fetchBreeds } from '../../services/theDogApi';
 
 // Components
 import { Loader } from 'components/Loader';
 import { CardsList } from 'components/CardsList';
 
-const Home = () => {
+// Styles
+import { Main, PageTitle } from './Products.styled';
+
+const Products = () => {
   const [cats, setCats] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -28,12 +31,14 @@ const Home = () => {
   }, []);
 
   return (
-    <main style={{ flex: '1 1 auto' }}>
+    <Main>
       {loading && <Loader />}
 
+      <PageTitle>Product Page</PageTitle>
+
       {cats && <CardsList data={cats} />}
-    </main>
+    </Main>
   );
 };
 
-export default Home;
+export default Products;

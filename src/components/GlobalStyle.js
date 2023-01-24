@@ -18,7 +18,6 @@ body {
   font-family:'Poppins', sans-serif;
   color: #232323;
   line-height:1.5;
-  height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

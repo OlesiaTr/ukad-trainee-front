@@ -9,7 +9,7 @@ import { SharedLayout } from './SharedLayout';
 
 // Pages
 const Home = lazy(() => import('../pages/Home'));
-const Products = lazy(() => import('../pages/Products'));
+const Products = lazy(() => import('../pages/Products/Products'));
 
 export const App = () => {
   return (

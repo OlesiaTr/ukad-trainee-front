@@ -6,7 +6,7 @@ export const Layout = styled.div`
   flex-direction: column;
 
   max-width: 1560px;
-  min-height: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
 `;
