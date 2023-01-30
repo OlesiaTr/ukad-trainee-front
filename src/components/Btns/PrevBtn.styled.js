@@ -18,19 +18,34 @@ export const Ellipse = styled.div`
   }
 
   > img {
+    height: 20px;
     transform: rotate(180deg);
   }
 `;
 
 export const Btn = styled.div`
   position: absolute;
-  top: 48%;
-  left: 0%;
+  top: 50%;
+  left: -8%;
+  transform: translate(50%, -50%);
   z-index: 2;
+
   cursor: pointer;
 
-  @media (min-width: 480px) {
-    left: 6%;
+  @media (min-width: 375px) {
+    left: -15%;
+  }
+
+  @media (min-width: 768px) {
+    left: -10%;
+  }
+
+  @media (min-width: 1024px) {
+    left: -8%;
+  }
+
+  @media (min-width: 1330px) {
+    left: -5%;
   }
 
   &.swiper-button-disabled {

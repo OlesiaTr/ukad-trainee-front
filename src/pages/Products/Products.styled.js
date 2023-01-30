@@ -7,13 +7,9 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  padding: 40px 20px 80px;
-`;
+  padding: 20px 20px 40px;
 
-export const PageTitle = styled.h1`
-  color: #000000;
-  font-weight: 700;
-  font-size: 36px;
-
-  margin-bottom: 16px;
+  @media (min-width: 767px) {
+    padding: 40px 20px 80px;
+  }
 `;

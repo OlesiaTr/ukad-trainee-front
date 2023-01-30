@@ -9,11 +9,11 @@ import { NextBtn, PrevBtn } from 'components/Btns';
 // Styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { SwiperWrapper, SliderWrapper } from './Slider.styled';
+import { Container, SwiperWrapper, SliderWrapper } from './Slider.styled';
 
 export const Slider = ({ data }) => {
   return (
-    <>
+    <Container>
       <SwiperWrapper
         modules={[Navigation, A11y]}
         navigation={{
@@ -49,7 +49,7 @@ export const Slider = ({ data }) => {
       </SwiperWrapper>
       <PrevBtn />
       <NextBtn />
-    </>
+    </Container>
   );
 };
 

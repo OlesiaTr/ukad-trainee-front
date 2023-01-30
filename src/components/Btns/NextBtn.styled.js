@@ -16,17 +16,23 @@ export const Ellipse = styled.div`
     width: 68px;
     height: 68px;
   }
+
+  > img {
+    height: 20px;
+  }
 `;
 
 export const Btn = styled.div`
   position: absolute;
-  top: 48%;
-  right: 0%;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
   z-index: 2;
+
   cursor: pointer;
 
-  @media (min-width: 480px) {
-    right: 6%;
+  @media (max-width: 375px) {
+    right: 8%;
   }
 
   &.swiper-button-disabled {

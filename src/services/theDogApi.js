@@ -8,7 +8,7 @@ axios.defaults.headers.common['x-api-key'] =
 
 const params = {
   limit: 8,
-  page: 9,
+  page: 12,
 };
 
 // HTTP requests

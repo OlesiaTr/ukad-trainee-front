@@ -7,9 +7,10 @@ import { fetchBreeds } from '../../services/theDogApi';
 // Components
 import { Loader } from 'components/Loader';
 import { Slider } from 'components/Slider/Slider';
+import { PageTitle } from 'components/PageTitle';
 
 // Styles
-import { Container, PageTitle } from './Home.styled';
+import { Container } from './Home.styled';
 
 const Home = () => {
   const [dogs, setDogs] = useState([]);
@@ -30,13 +31,13 @@ const Home = () => {
     getDogs();
   }, []);
 
+  if (loading) return <Loader />;
+
   return (
     <Container>
-      {loading && <Loader />}
+      <PageTitle text={'Home Page'} />
 
-      {!loading && <PageTitle>Home Page</PageTitle>}
-
-      {dogs && !loading && <Slider data={dogs} />}
+      {dogs.length > 0 && <Slider data={dogs} />}
     </Container>
   );
 };
