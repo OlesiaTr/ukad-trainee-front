@@ -9,7 +9,7 @@ import { Loader } from 'components/Loader';
 import { Slider } from 'components/Slider/Slider';
 
 // Styles
-import { Main, PageTitle } from './Home.styled';
+import { Container, PageTitle } from './Home.styled';
 
 const Home = () => {
   const [dogs, setDogs] = useState([]);
@@ -31,13 +31,13 @@ const Home = () => {
   }, []);
 
   return (
-    <Main>
+    <Container>
       {loading && <Loader />}
 
       {!loading && <PageTitle>Home Page</PageTitle>}
 
       {dogs && !loading && <Slider data={dogs} />}
-    </Main>
+    </Container>
   );
 };
 

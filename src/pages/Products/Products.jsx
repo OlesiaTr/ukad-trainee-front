@@ -9,7 +9,7 @@ import { Loader } from 'components/Loader';
 import { CardsList } from 'components/CardsList';
 
 // Styles
-import { Main, PageTitle } from './Products.styled';
+import { Container, PageTitle } from './Products.styled';
 
 const Products = () => {
   const [dogs, setDogs] = useState([]);
@@ -31,13 +31,13 @@ const Products = () => {
   }, []);
 
   return (
-    <Main>
+    <Container>
       {loading && <Loader />}
 
       {!loading && <PageTitle>Dogs Showroom (aka Product Page)</PageTitle>}
 
       {dogs && <CardsList data={dogs} />}
-    </Main>
+    </Container>
   );
 };
 

@@ -2,12 +2,17 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const Header = styled.header`
+export const Layout = styled.main`
   display: flex;
-  align-items: center;
-  gap: 15px;
+  flex-direction: column;
 
-  padding: 25px 0 25.5px;
+  max-width: 1600px;
+  min-height: 100vh;
+  margin: 0 auto;
+`;
+
+export const Header = styled.header`
+  padding: 25px 20px 25.5px;
 
   background: #022b32;
 
@@ -16,13 +21,22 @@ export const Header = styled.header`
   }
 `;
 
-export const Logo = styled.img`
-  width: 110px;
-  margin-left: 10px;
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  max-width: 1560px;
+
+  margin: 0 auto;
 
   @media (min-width: 480px) {
-    margin-left: 20px;
+    gap: 55px;
   }
+`;
+
+export const Logo = styled.img`
+  width: 110px;
 `;
 
 export const StyledLink = styled(NavLink)`
@@ -45,12 +59,10 @@ export const StyledLink = styled(NavLink)`
 
 export const Footer = styled.footer`
   background: #022b32;
+  padding: 27px 29px;
 
-  > p {
+  & p {
     text-transform: uppercase;
     color: #ffffff;
-
-    margin-left: 29px;
-    padding: 27px 0;
   }
 `;

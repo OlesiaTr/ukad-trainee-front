@@ -1,13 +1,13 @@
 // Utils
 import styled from 'styled-components';
 
-export const Main = styled.main`
+export const Container = styled.div`
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  padding: 40px 0 80px;
+  padding: 40px 20px 80px;
 `;
 
 export const PageTitle = styled.h1`
@@ -15,5 +15,5 @@ export const PageTitle = styled.h1`
   font-weight: 700;
   font-size: 36px;
 
-  margin: 0 0 16px 20px;
+  margin-bottom: 16px;
 `;
