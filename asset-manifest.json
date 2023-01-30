@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/ukad-trainee-front/static/css/main.f25c51b5.css",
-    "main.js": "/ukad-trainee-front/static/js/main.3adee144.js",
+    "main.js": "/ukad-trainee-front/static/js/main.97d0eaf8.js",
     "static/css/571.83aa38fb.chunk.css": "/ukad-trainee-front/static/css/571.83aa38fb.chunk.css",
-    "static/js/571.c7b13b57.chunk.js": "/ukad-trainee-front/static/js/571.c7b13b57.chunk.js",
-    "static/js/350.77de0f5c.chunk.js": "/ukad-trainee-front/static/js/350.77de0f5c.chunk.js",
+    "static/js/571.4307112a.chunk.js": "/ukad-trainee-front/static/js/571.4307112a.chunk.js",
+    "static/js/350.8b498ddd.chunk.js": "/ukad-trainee-front/static/js/350.8b498ddd.chunk.js",
     "static/js/952.d03c6c46.chunk.js": "/ukad-trainee-front/static/js/952.d03c6c46.chunk.js",
     "static/js/6.b965fdbb.chunk.js": "/ukad-trainee-front/static/js/6.b965fdbb.chunk.js",
     "static/media/Poppins-Regular.ttf": "/ukad-trainee-front/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
@@ -12,15 +12,15 @@
     "static/media/Poppins-Bold.ttf": "/ukad-trainee-front/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "index.html": "/ukad-trainee-front/index.html",
     "main.f25c51b5.css.map": "/ukad-trainee-front/static/css/main.f25c51b5.css.map",
-    "main.3adee144.js.map": "/ukad-trainee-front/static/js/main.3adee144.js.map",
+    "main.97d0eaf8.js.map": "/ukad-trainee-front/static/js/main.97d0eaf8.js.map",
     "571.83aa38fb.chunk.css.map": "/ukad-trainee-front/static/css/571.83aa38fb.chunk.css.map",
-    "571.c7b13b57.chunk.js.map": "/ukad-trainee-front/static/js/571.c7b13b57.chunk.js.map",
-    "350.77de0f5c.chunk.js.map": "/ukad-trainee-front/static/js/350.77de0f5c.chunk.js.map",
+    "571.4307112a.chunk.js.map": "/ukad-trainee-front/static/js/571.4307112a.chunk.js.map",
+    "350.8b498ddd.chunk.js.map": "/ukad-trainee-front/static/js/350.8b498ddd.chunk.js.map",
     "952.d03c6c46.chunk.js.map": "/ukad-trainee-front/static/js/952.d03c6c46.chunk.js.map",
     "6.b965fdbb.chunk.js.map": "/ukad-trainee-front/static/js/6.b965fdbb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f25c51b5.css",
-    "static/js/main.3adee144.js"
+    "static/js/main.97d0eaf8.js"
   ]
 }
