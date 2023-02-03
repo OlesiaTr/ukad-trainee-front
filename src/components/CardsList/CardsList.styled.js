@@ -7,6 +7,10 @@ export const Container = styled.ul`
   justify-content: center;
   gap: 40px;
 
+  > li {
+    border: 3px solid #f2f2f2;
+  }
+
   @media (min-width: 767px) {
     grid-template-columns: repeat(2, 350px);
   }

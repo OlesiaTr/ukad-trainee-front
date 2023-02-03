@@ -4,8 +4,6 @@ import styled from 'styled-components';
 export const CardWrapper = styled.div`
   border-radius: 4px;
   width: 100%;
-
-  border: 3px solid #f2f2f2;
 `;
 
 export const ImgWrapper = styled.div`
@@ -18,7 +16,7 @@ export const ImgWrapper = styled.div`
 `;
 
 export const DescWrapper = styled.div`
-  margin: 0 28px;
+  margin: 0 28px 28px;
 `;
 
 export const DogName = styled.p`
