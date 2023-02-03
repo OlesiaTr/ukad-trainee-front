@@ -25,6 +25,8 @@ export const SwiperWrapper = styled(Swiper)`
 `;
 
 export const SliderWrapper = styled(SwiperSlide)`
+  border: 3px solid #f2f2f2;
+
   @media (min-width: 1024px) {
     max-width: 420px;
   }
