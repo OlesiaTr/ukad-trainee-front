@@ -26,27 +26,11 @@ export const Ellipse = styled.div`
 export const Btn = styled.div`
   position: absolute;
   top: 50%;
-  left: -8%;
-  transform: translate(50%, -50%);
+  left: 0%;
+  transform: translate(-50%, -50%);
   z-index: 2;
 
   cursor: pointer;
-
-  @media (min-width: 375px) {
-    left: -15%;
-  }
-
-  @media (min-width: 768px) {
-    left: -10%;
-  }
-
-  @media (min-width: 1024px) {
-    left: -8%;
-  }
-
-  @media (min-width: 1330px) {
-    left: -5%;
-  }
 
   &.swiper-button-disabled {
     opacity: 0;
